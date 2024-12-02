@@ -18,12 +18,12 @@ from django.contrib import admin
 from django.urls import path,include
 from django.conf import settings
 from django.conf.urls.static import static
+from customer import views
+
 
 urlpatterns = [
-    path('admin/', admin.site.urls),
-    path('',include('product.urls')),
-    path('customer/',include('customer.urls')),
-    path('order/',include('order.urls')),
+    path('register_account',views.register,name='register_account'),
+    
    
 ]
 
