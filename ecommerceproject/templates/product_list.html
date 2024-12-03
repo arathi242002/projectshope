@@ -93,7 +93,7 @@
               <div class="box">
                 <a href="">
                   <div class="img-box">{% if Product.image %}
-                    <a href="{% url 'product_details' %}"><img src="{{ Product.image.url }}" alt=""></a>{% endif %}
+                    <a href="{% url 'product_details' Product.id %}"><img src="{{ Product.image.url }}" alt=""></a>{% endif %}
                 </div>
                   <div class="detail-box">
                     <h6>
