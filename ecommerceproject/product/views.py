@@ -5,7 +5,10 @@ from django.core.paginator import Paginator
 
 
 def index(request):
-    return render(request,'index.html')
+    product_feature=Products.objects.order_by('priority')[:4]
+    
+    context={'product_feature':product_feature}
+    return render(request,'index.html',context)
 
 
 def product_list(request):

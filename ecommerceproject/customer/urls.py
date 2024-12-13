@@ -23,6 +23,7 @@ from customer import views
 
 urlpatterns = [
     path('register_account',views.register,name='register_account'),
+    path('login_account',views.login_account,name="login_account"),
     
    
 ]
